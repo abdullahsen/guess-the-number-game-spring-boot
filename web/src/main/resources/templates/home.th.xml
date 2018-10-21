@@ -1,0 +1,13 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+    <attr sel="#game-welcome"
+          th:text="#{game.title}"/>
+    <attr sel="#game-play"
+          th:href="@{__${T(com.iafnstudios.util.GameMappings).PLAY}__}" th:text="#{game.play}"
+          />
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>
